@@ -11,8 +11,25 @@
 
 <style>
 	
+	.body { font-size: 16px;
+	}
+	
+	.p { font-size: 120%; line-height: 1.2;
+	}
+	
+	.h1 {font-size: 250%;
+	}
+	
+	.h2 {font-size: 225%;
+	}
+	
+	.h3 {font-size: 200%;
+	}
+	
 	.fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 50px; background-color: 				#003fb2;
 	}
+	
+	.nav-links a {color: white;}
 	
 	.img-fluid {
 		max-width: 95%;
@@ -22,8 +39,21 @@
 
 <body class="main">
 	<div class="container-fluid">
-		<nav class="fixed-nav-bar" id="header-nav">
-		</nav>
+		<div class="nav">
+			<div class="row">
+				<nav class="fixed-nav-bar" id="header-nav">
+					<div class="col-xs-2">
+						<h3 class="nav-links" align="center"><a href="#about">About</a></h3>
+					</div>
+					<div class="col-xs-2">
+						<h3 class="nav-links" align="center"><a href="#portfolio">Portfolio</a></h3>
+					</div>
+					<div class="col-xs-2">
+						<h3 class="nav-links" align="center"><a href="#writing">Writing</a></h3>
+					</div>
+				</nav>
+			</div>
+		</div>
 		<div class="section" id="about">
 			<div class="row">
 				<div class="col-xs-4">
@@ -31,7 +61,9 @@
 				</div>
 				<div class="col-xs-8">
 					<h2>PROFESSOR. WEB DEVELOPER. WRITER.</h2>
-					<p>A very brief bio will go here.</p>
+					<p>Te enim iudicem aequum puto, modo quae dicat ille bene noris. Ita relinquet duas, de quibus etiam atque etiam consideret. Primum in nostrane potestate est, quid meminerimus? Nescio quo modo praetervolavit oratio. Illa tamen simplicia, vestra versuta.</p>
+					<p>Sed quae tandem ista ratio est? Itaque eos id agere, ut a se dolores, morbos, debilitates 	repellant. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Conferam tecum, quam cuique verso rem subicias;</p>
+					<p>Hic quoque suus est de summoque bono dissentiens dici vere Peripateticus non potest. Urgent tamen et nihil remittunt. Nam memini etiam quae nolo, oblivisci non possum quae volo. Sed mehercule pergrata mihi oratio tua. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret. Ut in voluptate sit, qui epuletur, in dolore, qui torqueatur.</p>
 				</div>
 			</div>
 		</div>
@@ -42,16 +74,16 @@
 					<p>Projects I've worked on.</p>
 				</div>
 				<div class="col-xs-3">
-					<img class="img-fluid" src="/portfolio-fcc/Assets/womenofholycross175.jpg">
-					<h3>Women of Holy Cross</h3>
+					<img class="img-fluid" src="portfolio-fcc/Assets/womenofholycross175.jpg">
+					<h3><a href="http://womenofholycross175.amycavender.org">Women of Holy Cross</a></h3>
 				</div>
 				<div class="col-xs-3">
-					<img class="img-fluid" src="/portfolio-fcc/Assets/SMCCommons.jpg">
-					<h3>Saint Mary's Commons</h3>
+					<img class="img-fluid" src="portfolio-fcc/Assets/SMCCommons.jpg">
+					<h3><a href="http://commons.saintmarys.edu">Saint Mary's Commons</a></h3>
 				</div>
 				<div class="col-xs-3">
-					<img class="img-fluid" src="/portfolio-fcc/Assets/amycavenderdotorg.jpg">
-					<h3>My professional academic site</h3>
+					<img class="img-fluid" src="portfolio-fcc/Assets/amycavenderdotorg.jpg">
+					<h3><a href="http://amycavender.org">My professional academic site</a></h3>
 				</div>
 			</div>
 		<div class="section" id="writing">
