@@ -11,8 +11,30 @@
 
 <script>
  $(document).ready(function() {
-	 
+	function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
     });
+
+});
 
 </script>
 
@@ -74,10 +96,6 @@ body {
 	#portfolio {
 		background-color: rgba(245, 245, 245, 1);
 		padding-top: 25px;
-	}
-	
-	.accordion {
-		display: none;
 	}
 	
 	#accordion-1 {
@@ -164,17 +182,23 @@ body {
 		<!-- The accordion section of the portfolio. -->
 		<div class="accordion">
 			<!-- accordion-1 Women of Holy Cross -->
+			<div class="accordion-section">
 				<div id="accordion-1" class="accordion-content">
 					<p>Some text about the CSC 175th website goes here.</p>
 				</div>
+			</div>
+			<div class="accordion-section">
 			<!-- accordion-2 Saint Mary's Commons -->
 				<div id="accordion-2" class="accordion-content">
 					<p>Some text about the SMC Commons goes here.</p>
 				</div>
+			</div>
+			<div class="accordion-section">
 			<!-- accordion-3 Academic site -->
 				<div id="accordion-3" class="accordion-content">
 					<p>Some text about my professional site goes here.</p>
 				</div>
+			</div>
 		</div>
 		
 		<!-- The writing section. -->
