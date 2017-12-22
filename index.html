@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="accordion.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 
 <script>
- $(document).ready(function() {
+ $jQuery(document).ready(function() {
 	function close_accordion_section() {
         $(".accordion .accordion-section-title").removeClass("active");
         $(".accordion .accordion-section-content").slideUp(300).removeClass("open");
@@ -182,23 +181,24 @@ body {
 		<div class="accordion">
 			<!-- accordion-1 Women of Holy Cross -->
 			<div class="accordion-section">
-				<div id="accordion-1" class="accordion-content">
+				<div id="accordion-1" class="accordion-section-content">
 					<p>Some text about the CSC 175th website goes here.</p>
 				</div>
 			</div>
 			<div class="accordion-section">
 			<!-- accordion-2 Saint Mary's Commons -->
-				<div id="accordion-2" class="accordion-content">
+				<div id="accordion-2" class="accordion-section-content">
 					<p>Some text about the SMC Commons goes here.</p>
 				</div>
 			</div>
 			<div class="accordion-section">
 			<!-- accordion-3 Academic site -->
-				<div id="accordion-3" class="accordion-content">
+				<div id="accordion-3" class="accordion-section-content">
 					<p>Some text about my professional site goes here.</p>
 				</div>
 			</div>
 		</div>
+
 		
 		<!-- The writing section. -->
 		<div class="section" id="writing">
