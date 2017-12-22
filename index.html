@@ -8,33 +8,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  /* jQuery (modified from a tutorial found at http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery) */
+  /* jQuery (for accordion; made using a tutorial from http://makitweb.com/accordion-with-html-css-and-jquery/) */
 
 <script>
  $(document).ready(function() {
-    function close_accordion() {
-        $(".accordion-portfolio-section .accordion-section-title").removeClass("active");
-        $(".accordion-portfolio-section .accordion-content").slideUp(300).removeClass("open");
-    }
- 
-    $(".accordion-section-title").click(function(e) {
-        // Grab current anchor value
-        var currentAttrValue = $(this).attr("href");
- 
-        if($(e.target).is(".active")) {
-            close_accordion();
-        }else {
-            close_accordion();
- 
-            // Add active class to section title
-            $(this).addClass("active");
-            // Open up the hidden content panel
-            $(".accordion" + currentAttrValue).slideDown(300).addClass("open"); 
-        }
- 
-        e.preventDefault();
+	 
     });
-});
 </script>
 
 
@@ -55,10 +34,7 @@
 		} 
 		
 	.nav-links a {color: white;}
-	
-
-/* Accordions */	
-
+		
 
 /* Typography */
 
@@ -100,6 +76,10 @@ body {
 	#portfolio {
 		background-color: rgba(245, 245, 245, 1);
 		padding-top: 25px;
+	}
+	
+	.accordion div {
+		display: none;
 	}
 	
 	#accordion-1 {
@@ -168,36 +148,38 @@ body {
 					<h2>PORTFOLIO</h2>
 					<p>Projects I've worked on.</p>
 				</div>
-				<div class="col-xs-3" align="center">
+				
+				<div class="col-xs-3 accordion" align="center"><!-- First accordion section. -->
 					<a class="accordion-section-title" href="#accordion-1"><img class="img-fluid img-circular" src="/portfolio-fcc/Assets/womenofholycross175.jpg"></a>
 					<p><a class="accordion-section-title" href="#accordion-1">Women of Holy Cross</a></p>
+					<!-- accordion-1 Women of Holy Cross -->
+					<div id="accordion-1" class="accordion-content">
+						<p>Some text about the CSC 175th website goes here.</p>
+					</div>
 				</div>
-				<div class="col-xs-3" align="center">
+				
+				<div class="col-xs-3 accordion" align="center"><!-- Second accordion section. -->
 					<a class="accordion-section-title" href="#accordion-2"><img class="img-fluid img-circular" src="/portfolio-fcc/Assets/SMCCommons.jpg"></a>
 					<p><a class="accordion-section-title" href="#accordion-2">Saint Mary's Commons</a></p>
+					<!-- accordion-2 Saint Mary's Commons -->
+					<div id="accordion-2" class="accordion-content">
+					<p>Some text about the SMC Commons goes here.</p>
+					</div>
 				</div>
-				<div class="col-xs-3" align="center">
+				
+				
+				<div class="col-xs-3 accordion" align="center"><!-- Third accordion section -->
 					<a class="accordion-section-title" href="#accordion-3"><img class="img-fluid img-circular" src="/portfolio-fcc/Assets/amycavenderdotorg.jpg"></a>
 					<p><a class="accordion-section-title" href="#accordion-3">My professional academic site</a></p>
+					<!-- accordion-3 Academic site -->
+					<div id="accordion-3" class="accordion-content">
+						<p>Some text about my professional site goes here.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		
-		<!-- The accordion section. -->
-		
-		<div class="accordion-portfolio-section">
-			<!-- accordion-1 Women of Holy Cross -->
-			<div id="accordion-1" class="accordion-content">
-				<p>Some text about the CSC 175th website goes here.</p>
-			</div>
-			<!-- accordion-2 Saint Mary's Commons -->
-			<div id="accordion-2" class="accordion-content">
-				<p>Some text about the SMC Commons goes here.</p>
-			</div>
-			<!-- accordion-3 Academic site -->
-			<div id="accordion-3" class="accordion-content">
-				<p>Some text about my professional site goes here.</p>
-			</div>	
+				
 		</div>
 		<!-- The writing section. -->
 		<div class="section" id="writing">
