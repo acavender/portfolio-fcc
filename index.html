@@ -16,11 +16,33 @@
   
   <style>
 
+  .section {
+		padding-left: 50px;
+		padding-right: 50px;
+		width: 100%;
+		} 
   
+  .img-fluid {
+		max-width: 75%;
+		max-height: 75%
+	}
+	
+	.img-circular {
+		border-color: black;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 50%;
+	}
+	
+	#about {
+		padding-top: 75px;
+	}
+
 	  
   </style>
   
-  <body>
+  <body class="main mod_scale_fluid">
+	<div class="container-fluid">
 	
 	<!-- Navbar from example at https://getbootstrap.com/docs/4.0/components/navbar/ -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
@@ -44,7 +66,21 @@
     </nav>	
 
 	<main>
-    <h1>Hello, world!</h1>
+    <!-- The about section. -->
+		
+		<div class="section" id="about">
+			<div class="row">
+				<div class="col-xs-3">
+					<img class="img-fluid img-circular" src="https://www.gravatar.com/avatar/9e8e2323861854475e85fa4db2308906?s=200">
+				</div>
+				<div class="col-xs-9">
+					<h2>WEB DEVELOPER. PROFESSOR. WRITER.</h2>
+					<p>Te enim iudicem aequum puto, modo quae dicat ille bene noris. Ita relinquet duas, de quibus etiam atque etiam consideret. Primum in nostrane potestate est, quid meminerimus? Nescio quo modo praetervolavit oratio. Illa tamen simplicia, vestra versuta.</p>
+					<p>Sed quae tandem ista ratio est? Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Conferam tecum, quam cuique verso rem subicias;</p>
+				</div>
+			</div>
+		</div>
+		
 	</main>
 
     <!-- Optional JavaScript -->
@@ -52,6 +88,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+	</div>
   </body>
   
 </html>
