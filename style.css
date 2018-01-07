@@ -1,7 +1,7 @@
 /* Adapted from http://www.kodingmadesimple.com/2016/02/change-bootstrap-navbar-color-text-hover-color.html */
 
-.navbar-custom {
-    background-color: #CC0000;
+.navbar {
+    background-color: #00119b;
     border-color: #AA0000;
     border-radius: 0;
 }
