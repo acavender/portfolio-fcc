@@ -8,20 +8,30 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-	<nav id="navbar">
-		<a href="#about">About</a>
-		<a href="#projects">Projects</a>
-	</nav>
-	<section id="welcome-section">
-		<h1>Placeholder</h1>
-	</section>
-	<section id="about">
-		Placholder text. Find me on <a href="https://github.com/acavender" id="profile-link">Github</a>.
-	</section>
-	<section id="projects">
-		<div class="project-tile"></div>
-		<div class="project-tile"></div>
-		<div class="project-tile"></div>
-	</section>
+	<div class="navigation">
+		<nav id="navbar">
+			<a href="#welcome-section" class="nav-link">Home</a>
+			<a href="#about" class="nav-link">About</a>
+			<a href="#projects" class="nav-link">Projects</a>
+		</nav>
+	</div>
+	<div class="container">
+		<section id="welcome-section">
+			<h1>Welcome</h1>
+			<p>Welcome to my sample portfolio. While this won't be my definitive online presence in the long term, for now it provides some examples of what I can do.</p>
+		</section>
+		<section id="about">
+			<h1>About me</h1>
+			<p>I'm reasonably active online. You can find me on <a href="https://github.com/acavender" id="profile-link">Github</a>, and on <a href="https://twitter.com/acavender">Twitter.</a>.</p>
+			<p>I also blog semi-regularly at <a href="http://profhacker.com/"><em>ProfHacker</em></a>. We're in the process of moving, so if you try the link before October 1, 2018, you may not find anything other than a placeholder. Until we're up and running at our new home on the web, you can find our archives at the <a href="https://www.chronicle.com/blogs/profhacker/"><em>Chronicle of Higher Education</em>'s website.</a></p>
+		</section>
+		<section id="projects">
+			<h1>Projects</h1>
+			<p>Below are links to projects I've worked on. All were built using WordPress; some required customization and/or management of a Multisite installation.</p>
+			<div class="project-tile" id="academic"><a href="http://amycavender.org"><img src="Assets/amycavenderdotorg.jpg" alt="Screenshot of my academic site"></a></div>
+			<div class="project-tile" id="smccommons"><a href="http://commons.saintmarys.edu/"><img src="Assets/SMCCommons.jpg" alt="Screenshot of the SMC Commons site"></a></div>
+			<div class="project-tile" id="cscmsc175"><a href="http://womenofholycross175.amycavender.org/"><img src="Assets/womenofholycross175.jpg" alt="Screenshot of Women of Holy Cross 175"></a></div>
+		</section>
+	</div>
 </body>
 </html>

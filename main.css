@@ -1,5 +1,53 @@
 /* Common styles and large screens */
 
+body {
+    background: white;
+    margin: 0;
+}
+
+a :link :visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+section {
+    margin: 0px 5% 0 5%;
+}
+
+
+.navigation {
+    background: darkred;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+div.container {
+    height: 90%;
+    overflow-y: auto;
+    position: fixed;
+    top: 70px;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
 
 /* Medium screens */
 
