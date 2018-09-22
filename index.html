@@ -19,6 +19,7 @@
 		<section id="welcome-section">
 			<h1>Welcome</h1>
 			<p>Welcome to my sample portfolio. While this won't be my definitive online presence in the long term, for now it provides some examples of what I can do.</p>
+			<p>The specifications for this project are what determined the height of the section you're reading. Sorry that the amount of text doesn't fill it on most screens.</p>
 		</section>
 		<section id="about">
 			<h1>About me</h1>
@@ -27,10 +28,33 @@
 		</section>
 		<section id="projects">
 			<h1>Projects</h1>
-			<p>Below are links to projects I've worked on. All were built using WordPress; some required customization and/or management of a Multisite installation.</p>
-			<div class="project-tile" id="academic"><a href="http://amycavender.org"><img src="Assets/amycavenderdotorg.jpg" alt="Screenshot of my academic site"></a></div>
-			<div class="project-tile" id="smccommons"><a href="http://commons.saintmarys.edu/"><img src="Assets/SMCCommons.jpg" alt="Screenshot of the SMC Commons site"></a></div>
-			<div class="project-tile" id="cscmsc175"><a href="http://womenofholycross175.amycavender.org/"><img src="Assets/womenofholycross175.jpg" alt="Screenshot of Women of Holy Cross 175"></a></div>
+			<div id="projects-about">
+				<p>Below are links to projects I've worked on. All were built using WordPress; some required customization and/or management of a Multisite installation.</p>
+				<br>
+			</div>
+			<div id="project-container">
+				<div class="project" id="project-academic">
+					<div class="project-tile" id="academic"><a href="http://amycavender.org"><img class="project-img" src="Assets/amycavenderdotorg.jpg" alt="Screenshot of my academic site"></a></div>
+					<div class="project-description">
+						<h2>My academic site</h2>
+						<p>My academic website, where I maintain a blog and where you'll find links to a number of course websites. The main site and most of the course sites run on a Wordpress Multisite installation.</p>
+					</div>
+				</div>
+				<div class="project" id="project-commons">
+				<div class="project-tile" id="smccommons"><a href="http://commons.saintmarys.edu/"><img class="project-img" src="Assets/SMCCommons.jpg" alt="Screenshot of the SMC Commons site"></a></div>
+				<div class="project-description">
+					<h2>Saint Mary's Commons</h2>
+					<p>At Saint Mary's College, the classes of 2018, 2019, and 2020 were part of an ePortfolio pilot project. They created their portfolio sites using a WordPress Multisite installation that I set up and continue to maintain. (Students from the class of 2021 onwards have been creating their portfolios in Blackboard.)</p>
+				</div>
+				</div>
+				<div class="project" id="project-cscmsc">
+					<div class="project-tile" id="cscmsc175"><a href="http://womenofholycross175.amycavender.org/"><img class="project-img" src="Assets/womenofholycross175.jpg" alt="Screenshot of Women of Holy Cross 175"></a></div>
+					<div class="project-description">
+						<h2>Women of Holy Cross 175th</h2>
+						<p>This was a website for the 175th anniversary of the Women of Holy Cross (now the Marianites of Holy Cross, Sisters of Holy Cross, and Sisters of the Holy Cross). Originally it had its own domain, but when the registration lapsed I moved it to my WordPress Multisite installation.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div>
 </body>
